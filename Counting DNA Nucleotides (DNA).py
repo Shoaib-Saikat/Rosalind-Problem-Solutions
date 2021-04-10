@@ -2,7 +2,7 @@
 import DNA_toolbox as DT
 
 #taking filename as input
-fn =('Enter filename:')
+fn =input('Enter filename:')
 
 #opening file and counting bases from imported function
 with open(fn,'r') as fh:
