@@ -6,7 +6,9 @@ fn =('Enter filename:')
 
 #opening file and counting bases from imported function
 with open(fn,'r') as fh:
+    #reifining DNA bases
     ref = DT.base_refine(fh.read())
+    #countung DNA bases
     A = DT.base_count(ref,'A')
     C = DT.base_count(ref,'C')
     G = DT.base_count(ref,'G')
