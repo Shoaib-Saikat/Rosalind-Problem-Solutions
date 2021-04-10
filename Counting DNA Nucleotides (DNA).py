@@ -7,7 +7,6 @@ fn =('Enter filename:')
 #opening file and counting bases from imported function
 with open(fn,'r') as fh:
     ref = DT.base_refine(fh.read())
-    print(ref)
     A = DT.base_count(ref,'A')
     C = DT.base_count(ref,'C')
     G = DT.base_count(ref,'G')
